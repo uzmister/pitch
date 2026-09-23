@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hamyon API — Investor Pitch 2026</title>
+<style>
+@font-face{font-family:Fredoka;font-weight:300 700;src:url(assets/fonts/fredoka-latin-wght-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+02BB-02BC,U+2000-206F,U+2191,U+2193,U+2212}
+@font-face{font-family:Fredoka;font-weight:300 700;src:url(assets/fonts/fredoka-latin-ext-wght-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02FF,U+1E00-1EFF,U+20A0-20C0}
+@font-face{font-family:Nunito;font-weight:200 1000;src:url(assets/fonts/nunito-latin-wght-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+02BB-02BC,U+2000-206F,U+2191,U+2193,U+2212}
+@font-face{font-family:Nunito;font-weight:200 1000;src:url(assets/fonts/nunito-latin-ext-wght-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02FF,U+1E00-1EFF,U+20A0-20C0,U+2190-21FF}
+:root{
+  --bg:#EEF0FF;--ink:#2B2A4C;--muted:#6E6C94;
+  --indigo:#6C5CE7;--mint:#5FD3A8;--peach:#FF9F7A;--sky:#5AB8F0;--lemon:#FFD166;--lav:#B8A9FF;--coral:#FF6B6B;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#d9dcf5}
+body{font-family:Nunito,sans-serif;color:var(--ink)}
+.slide{width:1920px;height:1080px;position:relative;overflow:hidden;background:
+  radial-gradient(900px 600px at 95% -10%,#DCD6FF 0%,transparent 60%),
+  radial-gradient(800px 600px at -10% 110%,#D6F5EA 0%,transparent 60%),var(--bg);
+  padding:80px 100px;margin:0 auto 40px;page-break-after:always;break-after:page}
+@media print{html,body{background:none}.slide{margin:0}}
+@page{size:1920px 1080px;margin:0}
+/* clay primitives */
+.clay{background:#F7F7FF;border-radius:44px;
+  box-shadow:18px 18px 40px rgba(108,92,231,.18),inset -10px -10px 22px rgba(108,92,231,.10),inset 10px 10px 22px rgba(255,255,255,.95)}
+.clay.c-indigo{background:#7B6CF0;color:#fff;box-shadow:18px 18px 40px rgba(108,92,231,.35),inset -10px -10px 22px rgba(40,20,140,.35),inset 10px 10px 22px rgba(255,255,255,.35)}
+.clay.c-mint{background:#8DE3C3;box-shadow:18px 18px 40px rgba(60,170,130,.28),inset -10px -10px 22px rgba(30,120,90,.22),inset 10px 10px 22px rgba(255,255,255,.6)}
+.clay.c-peach{background:#FFC1A6;box-shadow:18px 18px 40px rgba(230,120,80,.28),inset -10px -10px 22px rgba(200,90,50,.22),inset 10px 10px 22px rgba(255,255,255,.6)}
+.clay.c-sky{background:#A6D9F7;box-shadow:18px 18px 40px rgba(60,140,210,.28),inset -10px -10px 22px rgba(30,100,170,.2),inset 10px 10px 22px rgba(255,255,255,.6)}
+.clay.c-lemon{background:#FFE39A;box-shadow:18px 18px 40px rgba(220,170,40,.28),inset -10px -10px 22px rgba(190,140,20,.2),inset 10px 10px 22px rgba(255,255,255,.6)}
+.clay.c-lav{background:#D5CCFF;box-shadow:18px 18px 40px rgba(108,92,231,.25),inset -10px -10px 22px rgba(90,70,200,.2),inset 10px 10px 22px rgba(255,255,255,.6)}
+.pill{display:inline-flex;align-items:center;gap:12px;padding:12px 28px;border-radius:999px;font-weight:800;font-size:22px;letter-spacing:.5px}
+h1,h2,h3,.num{font-family:Fredoka,Nunito,sans-serif}
+.kicker{font-family:Fredoka;font-weight:600;font-size:26px;color:var(--indigo);letter-spacing:3px;text-transform:uppercase;margin-bottom:10px}
+h2{font-size:68px;font-weight:700;line-height:1.05;letter-spacing:-.5px}
+h2 em{font-style:normal;color:var(--indigo)}
+.lead{font-size:28px;color:var(--muted);line-height:1.4;margin-top:16px;max-width:1000px}
+.footer{position:absolute;left:100px;right:100px;bottom:34px;display:flex;justify-content:space-between;font-size:18px;color:var(--muted);font-weight:700}
+.footer b{color:var(--indigo)}
+.ill{position:absolute;border-radius:60px;overflow:hidden}
+.ill img{width:100%;height:100%;object-fit:cover;display:block}
+.icon{width:72px;height:72px;border-radius:24px;display:flex;align-items:center;justify-content:center;font-family:Fredoka;font-weight:700;font-size:34px;flex:none}
+.src{font-size:15px;color:var(--muted);opacity:.85}
+.row{display:flex;gap:36px}
+</style>
+</head>
+<body>
+
+<!-- 1. TITLE -->
+<section class="slide">
+  <div style="position:absolute;right:40px;top:90px;width:980px;height:660px" class="ill"><img src="assets/img/hero.jpg" alt=""></div>
+  <div style="position:relative;z-index:2;max-width:900px;margin-top:40px">
+    <div class="pill clay" style="color:var(--indigo)">Investor Pitch · 2026</div>
+    <h1 style="font-size:150px;font-weight:700;line-height:.95;margin-top:44px;letter-spacing:-2px">Hamyon<span style="color:var(--indigo)">API</span></h1>
+    <p style="font-size:40px;font-weight:800;margin-top:24px;line-height:1.25">Telegram botlar uchun avtomatik to'lov tizimi — HUMO va UZCARD</p>
+    <p class="lead" style="font-size:28px">To'lovlarni 5–30 soniyada aniqlaymiz. Shartnoma, terminal va cron kerak emas.</p>
+  </div>
+  <div class="row" style="position:absolute;left:100px;bottom:110px;z-index:2">
+    <div class="clay" style="padding:30px 40px;display:flex;align-items:center;gap:24px">
+      <img src="assets/img/ceo.jpg" style="width:92px;height:92px;border-radius:30px;object-fit:cover" alt="">
+      <div><div style="font-size:18px;color:var(--muted);font-weight:800">CEO & ASOSCHI</div><div class="num" style="font-size:34px;font-weight:600">Hamitjonov Ruslan</div></div>
+    </div>
+    <div class="clay c-indigo" style="padding:30px 44px">
+      <div style="font-size:18px;font-weight:800;opacity:.85">SO'RALAYOTGAN INVESTITSIYA</div>
+      <div class="num" style="font-size:54px;font-weight:700">$10 000</div>
+    </div>
+    <div class="clay c-mint" style="padding:30px 44px">
+      <div style="font-size:18px;font-weight:800;opacity:.75">SAYT</div>
+      <div class="num" style="font-size:40px;font-weight:600;margin-top:8px">hamyon-api.uz</div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. PROBLEM -->
+<section class="slide">
+  <div class="kicker">02 · Muammo</div>
+  <h2>Telegramda savdo qilish oson,<br><em>to'lov qabul qilish</em> esa qiyin</h2>
+  <div class="ill" style="right:90px;top:170px;width:700px;height:700px"><img src="assets/img/problem.jpg" alt=""></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:34px;margin-top:56px;width:960px">
+    <div class="clay" style="padding:36px"><div class="icon clay c-peach">1</div><h3 style="font-size:32px;margin:22px 0 10px">Qo'lda tekshirish</h3><p style="font-size:22px;color:var(--muted);line-height:1.4">Mijoz chek skrinshot yuboradi, admin kartani qo'lda tekshiradi — soatlab vaqt ketadi.</p></div>
+    <div class="clay" style="padding:36px"><div class="icon clay c-lav">2</div><h3 style="font-size:32px;margin:22px 0 10px">Ekvayring to'sig'i</h3><p style="font-size:22px;color:var(--muted);line-height:1.4">Payme/Click ulash uchun yuridik shaxs, STIR, bank hisobi va 3–7 kunlik ko'rib chiqish kerak.</p></div>
+    <div class="clay" style="padding:36px"><div class="icon clay c-sky">3</div><h3 style="font-size:32px;margin:22px 0 10px">Soxta cheklar</h3><p style="font-size:22px;color:var(--muted);line-height:1.4">Tahrirlangan skrinshotlar orqali firibgarlik — kichik biznes uchun to'g'ridan-to'g'ri zarar.</p></div>
+    <div class="clay" style="padding:36px"><div class="icon clay c-lemon">4</div><h3 style="font-size:32px;margin:22px 0 10px">24/7 bo'lmaydi</h3><p style="font-size:22px;color:var(--muted);line-height:1.4">Tunda kelgan buyurtma ertalabgacha kutadi — mijoz ketadi, konversiya tushadi.</p></div>
+  </div>
+  <div class="footer"><span><b>Hamyon API</b> · Investor Pitch</span><span>Manba: uzneo.uz (ekvayring talablari, 2026)</span></div>
+</section>
+
+<!-- 3. SOLUTION -->
+<section class="slide">
+  <div class="kicker">03 · Yechim</div>
+  <h2>4 qadamda <em>to'liq avtomatik</em> to'lov</h2>
+  <p class="lead">Karta xabarnomalarini o'qiymiz, summani solishtiramiz va natijani botingizga o'zimiz yuboramiz.</p>
+  <div class="ill" style="right:80px;top:70px;width:560px;height:380px"><img src="assets/img/solution.jpg" alt=""></div>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin-top:250px">
+    <div class="clay" style="padding:34px"><div class="num" style="font-size:60px;font-weight:700;color:var(--indigo)">01</div><h3 style="font-size:28px;margin:10px 0">@HamyonAPIBot</h3><p style="font-size:21px;color:var(--muted);line-height:1.4">/start — shop_id va shop_key darhol beriladi</p></div>
+    <div class="clay" style="padding:34px"><div class="num" style="font-size:60px;font-weight:700;color:var(--mint)">02</div><h3 style="font-size:28px;margin:10px 0">Kartani ulash</h3><p style="font-size:21px;color:var(--muted);line-height:1.4">HUMO (@HumoCardBot) yoki UZCARD (@CardXabarBot)</p></div>
+    <div class="clay" style="padding:34px"><div class="num" style="font-size:60px;font-weight:700;color:var(--peach)">03</div><h3 style="font-size:28px;margin:10px 0">POST /payment/create</h3><p style="font-size:21px;color:var(--muted);line-height:1.4">Javobda payment_id va karta raqami qaytadi</p></div>
+    <div class="clay c-indigo" style="padding:34px"><div class="num" style="font-size:60px;font-weight:700">04</div><h3 style="font-size:28px;margin:10px 0">paid / cancel</h3><p style="font-size:21px;opacity:.9;line-height:1.4">complete_url ga natija o'zi keladi — cron kerak emas</p></div>
+  </div>
+  <div class="row" style="margin-top:44px">
+    <div class="pill clay c-mint">5–30 soniya aniqlash</div>
+    <div class="pill clay c-sky">Faqat o'qish — mablag'ga kirish yo'q</div>
+    <div class="pill clay c-lemon">24/7 · qayta yuborish (retry)</div>
+    <div class="pill clay c-lav">REST API · Python / PHP</div>
+  </div>
+  <div class="footer"><span><b>Hamyon API</b> · Investor Pitch</span><span>hamyon-api.uz</span></div>
+</section>
+
+<!-- 4. MARKET -->
+<section class="slide">
+  <div class="kicker">04 · Bozor hajmi</div>
+  <h2>TAM · SAM · <em>SOM</em></h2>
+  <p class="lead">O'zbekistonda Telegram — asosiy biznes platformasi: 27 mln foydalanuvchi, 195 000+ kanal.</p>
+  <div style="position:absolute;left:110px;top:360px;width:640px;height:640px">
+    <div class="clay c-lav" style="position:absolute;inset:0;border-radius:50%;display:flex;justify-content:center;padding-top:50px"><div style="text-align:center"><div class="num" style="font-size:30px;font-weight:600">TAM</div><div class="num" style="font-size:58px;font-weight:700">$90M</div></div></div>
+    <div class="clay c-mint" style="position:absolute;left:110px;top:210px;width:420px;height:420px;border-radius:50%;display:flex;justify-content:center;padding-top:44px"><div style="text-align:center"><div class="num" style="font-size:28px;font-weight:600">SAM</div><div class="num" style="font-size:50px;font-weight:700">$24M</div></div></div>
+    <div class="clay c-indigo" style="position:absolute;left:210px;top:380px;width:220px;height:220px;border-radius:50%;display:flex;align-items:center;justify-content:center"><div style="text-align:center"><div class="num" style="font-size:24px;font-weight:600">SOM</div><div class="num" style="font-size:42px;font-weight:700">$1.2M</div></div></div>
+  </div>
+  <div style="position:absolute;left:830px;top:370px;width:990px;display:flex;flex-direction:column;gap:26px">
+    <div class="clay" style="padding:28px 36px;display:flex;gap:28px;align-items:center"><div class="icon clay c-lav">T</div><div><h3 style="font-size:30px">TAM — $90M / yil</h3><p style="font-size:21px;color:var(--muted);line-height:1.35">~600 000 onlayn savdo qiluvchi tadbirkor va o'zini o'zi band qilganlar × $150 yillik to'lov xizmati</p></div></div>
+    <div class="clay" style="padding:28px 36px;display:flex;gap:28px;align-items:center"><div class="icon clay c-mint">S</div><div><h3 style="font-size:30px">SAM — $24M / yil</h3><p style="font-size:21px;color:var(--muted);line-height:1.35">~160 000 Telegram bot / kanal orqali sotuvchi biznes (kurslar, obuna, raqamli mahsulot, xizmatlar)</p></div></div>
+    <div class="clay" style="padding:28px 36px;display:flex;gap:28px;align-items:center"><div class="icon clay c-indigo">S</div><div><h3 style="font-size:30px">SOM — $1.2M / yil (5-yil)</h3><p style="font-size:21px;color:var(--muted);line-height:1.35">SAM ning 5% — ~10 000 to'lovchi mijoz, o'rtacha $10/oy</p></div></div>
+    <p class="src">Telegram: 101digital.uz (2026) · E-commerce $1.2 mlrd (2026) · Hisob-kitoblar — jamoa bahosi (bottom-up)</p>
+  </div>
+  <div class="footer"><span><b>Hamyon API</b> · Investor Pitch</span><span>04 / 10</span></div>
+</section>
+
+<!-- 5. BUSINESS MODEL & COMPETITION -->
+<section class="slide">
+  <div class="kicker">05 · Biznes model va raqobat</div>
+  <h2>Oddiy <em>obuna</em> modeli — foizsiz</h2>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:50px">
+    <div class="clay" style="padding:34px"><div style="font-weight:800;color:var(--muted);font-size:20px">FREE</div><div class="num" style="font-size:52px;font-weight:700">0 so'm</div><p style="font-size:20px;color:var(--muted);margin-top:10px;line-height:1.5">50 ta to'lov/oy<br>1 ta karta</p></div>
+    <div class="clay c-mint" style="padding:34px"><div style="font-weight:800;font-size:20px">START</div><div class="num" style="font-size:52px;font-weight:700">99 000</div><p style="font-size:20px;margin-top:10px;line-height:1.5">so'm/oy · 1 000 to'lov<br>2 ta karta</p></div>
+    <div class="clay c-indigo" style="padding:34px;transform:translateY(-14px)"><div style="font-weight:800;font-size:20px">PRO </div><div class="num" style="font-size:52px;font-weight:700">249 000</div><p style="font-size:20px;margin-top:10px;line-height:1.5">so'm/oy · 10 000 to'lov<br>5 karta · webhook priority</p></div>
+    <div class="clay c-peach" style="padding:34px"><div style="font-weight:800;font-size:20px">BUSINESS</div><div class="num" style="font-size:52px;font-weight:700">599 000</div><p style="font-size:20px;margin-top:10px;line-height:1.5">so'm/oy · cheksiz<br>SLA · shaxsiy menejer</p></div>
+  </div>
+  <div class="clay" style="margin-top:44px;padding:30px 40px">
+    <table style="width:100%;border-collapse:collapse;font-size:23px">
+      <tr style="color:var(--muted);font-weight:800;text-align:left"><th style="padding:10px">Mezon</th><th>Hamyon API</th><th>Payme / Click ekvayring</th><th>Qo'lda (skrinshot)</th></tr>
+      <tr style="border-top:2px solid #E4E2FA"><td style="padding:12px 10px;font-weight:700">Yuridik shaxs kerakmi</td><td style="color:#2EAF7D;font-weight:800">Yo'q </td><td>Ha (STIR, bank hisobi)</td><td>Yo'q</td></tr>
+      <tr style="border-top:2px solid #E4E2FA"><td style="padding:12px 10px;font-weight:700">Ulanish vaqti</td><td style="color:#2EAF7D;font-weight:800">~10 daqiqa </td><td>3–7 ish kuni</td><td>—</td></tr>
+      <tr style="border-top:2px solid #E4E2FA"><td style="padding:12px 10px;font-weight:700">Komissiya</td><td style="color:#2EAF7D;font-weight:800">0% (fiks obuna) </td><td>~1–2% har to'lovdan</td><td>0%, lekin vaqt sarfi</td></tr>
+      <tr style="border-top:2px solid #E4E2FA"><td style="padding:12px 10px;font-weight:700">Avtomatlashtirish</td><td style="color:#2EAF7D;font-weight:800">To'liq, 24/7 </td><td>To'liq</td><td>Yo'q</td></tr>
+    </table>
+  </div>
+  <p class="src" style="margin-top:18px">Payme/Click komissiya va talablar: uzneo.uz, 101digital.uz (2026)</p>
+  <div class="footer"><span><b>Hamyon API</b> · Investor Pitch</span><span>05 / 10</span></div>
+</section>
+
+<!-- 6. SWOT -->
+<section class="slide">
+  <div class="kicker">06 · Strategik tahlil</div>
+  <h2><em>SWOT</em> tahlili</h2>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:34px;margin-top:44px">
+    <div class="clay c-mint" style="padding:36px 40px;height:370px"><div style="display:flex;align-items:center;gap:20px"><div class="icon clay" style="color:#2EAF7D">S</div><h3 style="font-size:36px">Kuchli tomonlar</h3></div>
+      <ul style="font-size:23px;line-height:1.6;margin:20px 0 0 28px"><li>Ulanish ~10 daqiqa, yuridik shaxs shart emas</li><li>Foizsiz fiks narx — kichik biznes uchun arzon</li><li>Tayyor ishlaydigan mahsulot, 5–30s aniqlash</li><li>Telegram-native: alohida panel kerak emas</li></ul></div>
+    <div class="clay c-peach" style="padding:36px 40px;height:370px"><div style="display:flex;align-items:center;gap:20px"><div class="icon clay" style="color:#E0673E">W</div><h3 style="font-size:36px">Zaif tomonlar</h3></div>
+      <ul style="font-size:23px;line-height:1.6;margin:20px 0 0 28px"><li>Uchinchi tomon xabarnoma botlariga bog'liqlik</li><li>Summa bo'yicha aniqlash (bir xil summa cheklovi)</li><li>Kichik jamoa, cheklangan marketing byudjeti</li><li>Hozircha faqat HUMO va UZCARD</li></ul></div>
+    <div class="clay c-sky" style="padding:36px 40px;height:370px"><div style="display:flex;align-items:center;gap:20px"><div class="icon clay" style="color:#2F8BC9">O</div><h3 style="font-size:36px">Imkoniyatlar</h3></div>
+      <ul style="font-size:23px;line-height:1.6;margin:20px 0 0 28px"><li>27 mln Telegram foydalanuvchi, Mini Apps o'sishi</li><li>Naqd pul ulushi 78% → 45% (2020–2026)</li><li>Visa/Mastercard, Uzum, QR qo'shish</li><li>Qozog'iston, Qirg'iziston, Tojikistonga chiqish</li></ul></div>
+    <div class="clay c-lav" style="padding:36px 40px;height:370px"><div style="display:flex;align-items:center;gap:20px"><div class="icon clay" style="color:var(--indigo)">T</div><h3 style="font-size:36px">Tahdidlar</h3></div>
+      <ul style="font-size:23px;line-height:1.6;margin:20px 0 0 28px"><li>Markaziy bank regulyatsiyasining o'zgarishi</li><li>UzQR 0.65% komissiya — ekvayring arzonlashuvi</li><li>Yirik o'yinchilar (Payme, Click) ham shunday qilishi</li><li>Bank xabarnoma formatlari o'zgarishi</li></ul></div>
+  </div>
+  <div class="footer"><span><b>Hamyon API</b> · Investor Pitch</span><span>Manba: 101digital.uz, uzdaily.uz (2026)</span></div>
+</section>
+
+<!-- 7. INVESTMENT -->
+<section class="slide">
+  <div class="kicker">07 · Investitsiya</div>
+  <h2><em>$10 000</em> — 12 oylik yo'l</h2>
+  <p class="lead">Mablag' 12 oy davomida sarflanadi; 14-oyda o'zini-o'zi qoplash (break-even) rejalashtirilgan.</p>
+  <div style="position:absolute;left:100px;top:370px;width:600px;height:600px" class="clay">
+    <div style="position:absolute;inset:60px;border-radius:50%;background:conic-gradient(#7B6CF0 0 35%,#5FD3A8 35% 60%,#FF9F7A 60% 80%,#5AB8F0 80% 90%,#FFD166 90% 100%);box-shadow:inset -12px -12px 26px rgba(0,0,0,.15),inset 12px 12px 26px rgba(255,255,255,.4)"></div>
+    <div style="position:absolute;inset:185px;border-radius:50%;background:#F7F7FF;box-shadow:inset 8px 8px 18px rgba(108,92,231,.18),inset -8px -8px 18px #fff;display:flex;align-items:center;justify-content:center;flex-direction:column"><div class="num" style="font-size:54px;font-weight:700">$10K</div><div style="font-weight:800;color:var(--muted);font-size:18px">12 OY</div></div>
+  </div>
+  <div style="position:absolute;left:780px;top:370px;width:1040px;display:flex;flex-direction:column;gap:18px">
+    <div class="clay" style="padding:22px 32px;display:flex;align-items:center;gap:26px"><div class="icon clay c-indigo" style="font-size:24px">35%</div><div style="flex:1"><h3 style="font-size:27px">Marketing va sotuv</h3><p style="font-size:19px;color:var(--muted)">Telegram Ads, bloger/kanal reklamasi, IT hamjamiyatlar, referal bonuslar</p></div><div class="num" style="font-size:36px;font-weight:700">$3 500</div></div>
+    <div class="clay" style="padding:22px 32px;display:flex;align-items:center;gap:26px"><div class="icon clay c-mint" style="font-size:24px">25%</div><div style="flex:1"><h3 style="font-size:27px">Mahsulot va infratuzilma</h3><p style="font-size:19px;color:var(--muted)">Serverlar, zaxira (backup), xavfsizlik auditi, SDK (Python/PHP/Node)</p></div><div class="num" style="font-size:36px;font-weight:700">$2 500</div></div>
+    <div class="clay" style="padding:22px 32px;display:flex;align-items:center;gap:26px"><div class="icon clay c-peach" style="font-size:24px">20%</div><div style="flex:1"><h3 style="font-size:27px">Jamoa</h3><p style="font-size:19px;color:var(--muted)">Part-time support operator va backend dasturchi</p></div><div class="num" style="font-size:36px;font-weight:700">$2 000</div></div>
+    <div class="clay" style="padding:22px 32px;display:flex;align-items:center;gap:26px"><div class="icon clay c-sky" style="font-size:24px">10%</div><div style="flex:1"><h3 style="font-size:27px">Yuridik va rasmiylashtirish</h3><p style="font-size:19px;color:var(--muted)">MChJ, IT Park rezidentligi, oferta, shaxsiy ma'lumotlar siyosati</p></div><div class="num" style="font-size:36px;font-weight:700">$1 000</div></div>
+    <div class="clay" style="padding:22px 32px;display:flex;align-items:center;gap:26px"><div class="icon clay c-lemon" style="font-size:24px">10%</div><div style="flex:1"><h3 style="font-size:27px">Zaxira fondi</h3><p style="font-size:19px;color:var(--muted)">Kutilmagan xarajatlar va risklar uchun</p></div><div class="num" style="font-size:36px;font-weight:700">$1 000</div></div>
+  </div>
+  <div class="ill" style="right:40px;top:40px;width:420px;height:280px"><img src="assets/img/money.jpg" alt=""></div>
+  <div class="footer"><span><b>Hamyon API</b> · Investor Pitch</span><span>07 / 10</span></div>
+</section>
+
+<!-- 8. FINANCIALS -->
+<section class="slide">
+  <div class="kicker">08 · Moliyaviy prognoz</div>
+  <h2>5 yillik <em>daromad va xarajat</em></h2>
+  <div class="clay" style="margin-top:44px;padding:40px 50px;height:520px;display:flex;align-items:flex-end;gap:60px;justify-content:space-around">
+    <!-- bars: scale 1.3M = 380px -->
+    <div style="text-align:center"><div style="display:flex;gap:12px;align-items:flex-end;height:390px"><div class="clay c-mint" style="width:70px;height:18px;border-radius:18px"></div><div class="clay c-peach" style="width:70px;height:22px;border-radius:18px"></div></div><div class="num" style="font-size:28px;font-weight:600;margin-top:16px">2027</div><div style="font-size:18px;color:var(--muted);font-weight:700">$25K / $30K</div></div>
+    <div style="text-align:center"><div style="display:flex;gap:12px;align-items:flex-end;height:390px"><div class="clay c-mint" style="width:70px;height:32px;border-radius:18px"></div><div class="clay c-peach" style="width:70px;height:26px;border-radius:18px"></div></div><div class="num" style="font-size:28px;font-weight:600;margin-top:16px">2028</div><div style="font-size:18px;color:var(--muted);font-weight:700">$110K / $85K</div></div>
+    <div style="text-align:center"><div style="display:flex;gap:12px;align-items:flex-end;height:390px"><div class="clay c-mint" style="width:70px;height:94px;border-radius:18px"></div><div class="clay c-peach" style="width:70px;height:64px;border-radius:18px"></div></div><div class="num" style="font-size:28px;font-weight:600;margin-top:16px">2029</div><div style="font-size:18px;color:var(--muted);font-weight:700">$320K / $220K</div></div>
+    <div style="text-align:center"><div style="display:flex;gap:12px;align-items:flex-end;height:390px"><div class="clay c-mint" style="width:70px;height:205px;border-radius:18px"></div><div class="clay c-peach" style="width:70px;height:132px;border-radius:18px"></div></div><div class="num" style="font-size:28px;font-weight:600;margin-top:16px">2030</div><div style="font-size:18px;color:var(--muted);font-weight:700">$700K / $450K</div></div>
+    <div style="text-align:center"><div style="display:flex;gap:12px;align-items:flex-end;height:390px"><div class="clay c-mint" style="width:70px;height:380px;border-radius:18px"></div><div class="clay c-peach" style="width:70px;height:240px;border-radius:18px"></div></div><div class="num" style="font-size:28px;font-weight:600;margin-top:16px">2031</div><div style="font-size:18px;color:var(--muted);font-weight:700">$1.3M / $820K</div></div>
+    <div style="align-self:flex-start;display:flex;flex-direction:column;gap:14px;font-weight:800;font-size:20px"><div style="display:flex;gap:12px;align-items:center"><span class="clay c-mint" style="width:30px;height:30px;border-radius:10px"></span>Daromad</div><div style="display:flex;gap:12px;align-items:center"><span class="clay c-peach" style="width:30px;height:30px;border-radius:10px"></span>Xarajat</div></div>
+  </div>
+  <div class="row" style="margin-top:36px">
+    <div class="clay c-indigo" style="padding:24px 36px;flex:1"><div style="font-size:18px;font-weight:800;opacity:.85">BREAK-EVEN</div><div class="num" style="font-size:42px;font-weight:700">14-oy</div></div>
+    <div class="clay" style="padding:24px 36px;flex:1"><div style="font-size:18px;font-weight:800;color:var(--muted)">5-YIL SOF FOYDA</div><div class="num" style="font-size:42px;font-weight:700">$480K</div></div>
+    <div class="clay" style="padding:24px 36px;flex:1"><div style="font-size:18px;font-weight:800;color:var(--muted)">O'RTACHA ARPU</div><div class="num" style="font-size:42px;font-weight:700">$10/oy</div></div>
+    <div class="clay c-mint" style="padding:24px 36px;flex:1"><div style="font-size:18px;font-weight:800;opacity:.75">INVESTOR ROI (10% ulush)</div><div class="num" style="font-size:42px;font-weight:700">×10+</div></div>
+  </div>
+  <div class="footer"><span><b>Hamyon API</b> · Investor Pitch</span><span>Prognoz — jamoa bahosi, kafolat emas</span></div>
+</section>
+
+<!-- 9. ROADMAP -->
+<section class="slide">
+  <div class="kicker">09 · 5 yillik reja</div>
+  <h2>Yo'l xaritasi va <em>maqsadlar</em></h2>
+  <div class="ill" style="right:60px;top:40px;width:520px;height:340px"><img src="assets/img/growth.jpg" alt=""></div>
+  <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:24px;margin-top:330px">
+    <div class="clay c-mint" style="padding:30px;height:420px"><div class="num" style="font-size:46px;font-weight:700">2027</div><div style="font-weight:800;font-size:20px;margin-bottom:14px">Ishga tushirish</div><ul style="font-size:20px;line-height:1.5;margin-left:22px"><li>MChJ + IT Park</li><li>Tariflar va to'lov paneli</li><li>SDK: Python, PHP, Node</li><li><b>400</b> to'lovchi mijoz</li></ul></div>
+    <div class="clay c-sky" style="padding:30px;height:420px;transform:translateY(-24px)"><div class="num" style="font-size:46px;font-weight:700">2028</div><div style="font-weight:800;font-size:20px;margin-bottom:14px">O'sish</div><ul style="font-size:20px;line-height:1.5;margin-left:22px"><li>Visa/Mastercard, Uzum</li><li>Mini App to'lov vidjeti</li><li>Jamoa 5 kishi</li><li><b>1 200</b> mijoz</li></ul></div>
+    <div class="clay c-lav" style="padding:30px;height:420px;transform:translateY(-48px)"><div class="num" style="font-size:46px;font-weight:700">2029</div><div style="font-weight:800;font-size:20px;margin-bottom:14px">Platforma</div><ul style="font-size:20px;line-height:1.5;margin-left:22px"><li>CRM, analitika, obunalar</li><li>Konstruktor: kodsiz bot do'kon</li><li>Bank hamkorligi</li><li><b>3 000</b> mijoz</li></ul></div>
+    <div class="clay c-peach" style="padding:30px;height:420px;transform:translateY(-72px)"><div class="num" style="font-size:46px;font-weight:700">2030</div><div style="font-weight:800;font-size:20px;margin-bottom:14px">Mintaqa</div><ul style="font-size:20px;line-height:1.5;margin-left:22px"><li>Qozog'iston, Qirg'iziston</li><li>Litsenziyalangan to'lov agenti</li><li>Jamoa 15 kishi</li><li><b>6 000</b> mijoz</li></ul></div>
+    <div class="clay c-indigo" style="padding:30px;height:420px;transform:translateY(-96px)"><div class="num" style="font-size:46px;font-weight:700">2031</div><div style="font-weight:800;font-size:20px;margin-bottom:14px">Lider</div><ul style="font-size:20px;line-height:1.5;margin-left:22px"><li>Markaziy Osiyo №1 Telegram to'lov API</li><li>$1.3M yillik daromad</li><li>Seed/A raund</li><li><b>10 000</b> mijoz</li></ul></div>
+  </div>
+  <div class="footer"><span><b>Hamyon API</b> · Investor Pitch</span><span>09 / 10</span></div>
+</section>
+
+<!-- 10. TEAM & CTA -->
+<section class="slide">
+  <div class="kicker">10 · Jamoa va taklif</div>
+  <h2>Keling, birga <em>quramiz</em></h2>
+  <div class="row" style="margin-top:54px;align-items:stretch">
+    <div class="clay" style="width:620px;padding:40px;text-align:center">
+      <img src="assets/img/ceo.jpg" style="width:300px;height:300px;border-radius:80px;object-fit:cover;box-shadow:14px 14px 30px rgba(108,92,231,.25)" alt="">
+      <h3 style="font-size:44px;margin-top:28px">Hamitjonov Ruslan</h3>
+      <div class="pill clay c-indigo" style="margin-top:14px">CEO & Asoschi</div>
+      <p style="font-size:22px;color:var(--muted);margin-top:22px;line-height:1.45">Mahsulot, strategiya va hamkorliklar. Hamyon API g'oyasini noldan ishlaydigan xizmatgacha olib chiqqan.</p>
+    </div>
+    <div style="flex:1;display:flex;flex-direction:column;gap:30px">
+      <div class="clay c-indigo" style="padding:44px 50px">
+        <div style="font-size:22px;font-weight:800;opacity:.85">TAKLIF</div>
+        <div class="num" style="font-size:88px;font-weight:700;line-height:1.1">$10 000</div>
+        <p style="font-size:26px;opacity:.92;margin-top:8px">evaziga <b>10% ulush</b> (post-money baho $100K) · 12 oylik runway</p>
+      </div>
+      <div class="row">
+        <div class="clay c-mint" style="padding:30px 36px;flex:1"><div style="font-weight:800;font-size:18px;opacity:.75">12 OYDA</div><div class="num" style="font-size:40px;font-weight:700">400 mijoz</div></div>
+        <div class="clay c-sky" style="padding:30px 36px;flex:1"><div style="font-weight:800;font-size:18px;opacity:.75">BREAK-EVEN</div><div class="num" style="font-size:40px;font-weight:700">14-oy</div></div>
+        <div class="clay c-peach" style="padding:30px 36px;flex:1"><div style="font-weight:800;font-size:18px;opacity:.75">5-YIL</div><div class="num" style="font-size:40px;font-weight:700">$1.3M</div></div>
+      </div>
+      <div class="clay" style="padding:30px 44px;display:flex;justify-content:space-between;font-size:28px;font-weight:800">
+        <span>hamyon-api.uz</span><span>@HamyonAPIBot</span><span>@HamyonAPI</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span><b>Hamyon API</b> · Rahmat!</span><span>10 / 10</span></div>
+</section>
+
+</body>
+</html>
